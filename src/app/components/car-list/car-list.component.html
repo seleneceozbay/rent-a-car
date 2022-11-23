@@ -16,13 +16,16 @@
       <p class="card-text">$ {{ data.price }}</p>
       <div class="col">
         <button
-          class="btn btn-success"
+          class="btn btn-outline-primary"
           (click)="clickDetail(data)"
           routerLink="/car-detail/{{ data.id }}"
         >
           Detail
         </button>
-        <button class="btn btn-warning" routerLink="/car-update/{{ data.id }}">
+        <button
+          class="btn btn-outline-warning"
+          routerLink="/car-update/{{ data.id }}"
+        >
           Update
         </button>
         <!-- <button class="btn btn-outline-danger" (click)="delete(data)">Delete</button> -->
