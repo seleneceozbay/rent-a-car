@@ -1,0 +1,34 @@
+<!-- <div style="display: flex; flex-direction: row; flex-wrap: wrap">
+  <div class="card mb-3" *ngFor="let cardetail of carDetail">
+    <img src="{{ cardetail.imagePath }}" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title"><b>Model:</b> {{ cardetail.model }}</h5>
+      <h5 class="card-title"><b>Yıl:</b> {{ cardetail.year }}</h5>
+      <p class="card-text"><b>Açıklama:</b> {{ cardetail.description }}</p>
+      <p class="card-text">
+        <small class="text-muted"><b>Fiyat:</b>{{ cardetail.price }} $ </small>
+      </p>
+    </div>
+  </div>
+</div> -->
+
+<button class="btn btn-secondary" routerLink="">BACK</button>
+<div class="card mb-3 cardStyle">
+  <div class="row g-0" *ngFor="let data of carDetail">
+    <div class="col-md-4">
+      <img
+        src="{{ data.imagePath }}"
+        class="img-fluid rounded-start"
+        alt="..."
+      />
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"><b>Model:</b> {{ data.model }}</h5>
+        <h5 class="card-title"><b>Year:</b> {{ data.year }}</h5>
+        <p class="card-text"><b>Description:</b> {{ data.description }}</p>
+        <p class="card-text"><b>Price:</b> {{ data.price }} $</p>
+      </div>
+    </div>
+  </div>
+</div>
