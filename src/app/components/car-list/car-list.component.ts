@@ -30,7 +30,6 @@ export class CarListComponent implements OnInit {
     this.carListService.getCarList(state).subscribe((data) => {
       this.carlists = data;
     });
-    console.log('selen');
   }
   getCarsByColorId(id: number) {
     this.carListService
